@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+      dockerfile: dockerfile
+      target: dev
+    volumes:
+      - ./backend/:/usr/src/app/backend
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    command: npm run dev
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: dockerfile
+      target: dev
+    environment:
+      # This env var is need for hot reload https://github.com/facebook/create-react-app/issues/1049
+      CHOKIDAR_USEPOLLING: 'true'
+    volumes:
+      - ./frontend/:/usr/src/app/frontend
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    command: npm run start
