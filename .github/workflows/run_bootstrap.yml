@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+on:
+  push:
+    branches: [bootstrap]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a set of commands using the runners shell
+      - name: Run a bootstrap
+        run: chmod +x ./script/bootstrap.sh
+      - name: Run a bootstrap
+        run: ./script/bootstrap.sh
+      - name: Check docker version
+        run: docker -v

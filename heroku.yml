@@ -1,0 +1,10 @@
+build:
+  docker:
+    web: dockerfile
+
+run:
+  web: cd ./backend/ && npm run start
+# release:
+#   image: web
+#   command:
+#     - echo nothing

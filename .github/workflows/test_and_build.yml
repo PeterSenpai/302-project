@@ -1,0 +1,57 @@
+name: Sanity Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            backend:
+              - 'backend/**'
+            frontend:
+              - 'frontend/**'
+
+      - name: Install Dependencies for project
+        run: npm install
+
+      - name: Install Dependencies for frontend
+        if: steps.filter.outputs.frontend == 'true'
+        run: cd frontend && npm install
+
+      - name: Install Dependencies for backend
+        if: steps.filter.outputs.backend == 'true'
+        run: cd backend && npm install
+
+      # run only if 'backend' files were changed
+      - name: backend tests
+        if: steps.filter.outputs.backend == 'true'
+        run: cd backend && npm run test
+
+      # run only if 'frontend' files were changed
+      - name: frontend tests
+        if: steps.filter.outputs.frontend == 'true'
+        run: cd frontend && npm run test
+
+      - name: Build frontend
+        if: steps.filter.outputs.frontend == 'true'
+        run: cd frontend && npm run build
