@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  node_server:
+    container_name: node_server
+    build:
+      context: ./
+      dockerfile: dockerfile
+      target: prod
+    environment:
+      NODE_ENV: 'production'
+    working_dir: /usr/src/app/backend
+    volumes:
+      - ./backend/:/usr/src/app/backend
+      - ./frontend/:/usr/src/app/frontend
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    # command: tail -f /dev/null
+    command: npm run start
