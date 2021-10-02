@@ -1,0 +1,19 @@
+FROM node:14.17.6-alpine3.14 as dev
+
+WORKDIR /usr/src/app/backend
+
+COPY package.json ./
+
+RUN npm install
+
+
+# FROM dev as prod
+
+# WORKDIR /usr/src/app/frontend
+
+# COPY ../frontend/package.json ./
+
+# RUN npm install
+
+# RUN npm run build
+
