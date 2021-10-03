@@ -6,6 +6,10 @@ COPY package.json ./
 
 RUN npm install
 
+CMD ["npm","run","dev"]
+# ENTRYPOINT ["tail"]
+# CMD ["-f","/dev/null"]
+
 
 # FROM dev as prod
 
