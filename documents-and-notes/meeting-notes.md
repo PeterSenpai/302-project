@@ -49,7 +49,7 @@ Lazar, Alan, Jeff, Peter
 #### Signed by:
 - [x] Alan
 - [ ] Jeff
-- [ ] Lazar
+- [x] Lazar
 - [ ] Peter
 
 ---
@@ -95,7 +95,7 @@ Lazar, Alan, Jeff, Peter
 #### Signed by:
 - [x] Alan
 - [ ] Jeff
-- [ ] Lazar
+- [x] Lazar
 - [ ] Peter
 
 ---
@@ -133,7 +133,7 @@ Lazar, Alan, Jeff, Peter
 #### Signed by:
 - [x] Alan
 - [ ] Jeff
-- [ ] Lazar
+- [x] Lazar
 - [ ] Peter
 
 ---
@@ -174,7 +174,7 @@ Lazar, Alan, Jeff, Peter
 #### Signed by:
 - [x] Alan
 - [ ] Jeff
-- [ ] Lazar
+- [x] Lazar
 - [ ] Peter
 
 ---
@@ -234,7 +234,7 @@ Lazar, Alan, Jeff, Peter
 #### Signed by:
 - [x] Alan
 - [ ] Jeff
-- [ ] Lazar
+- [x] Lazar
 - [ ] Peter
 
 ---
