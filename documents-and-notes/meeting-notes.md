@@ -32,7 +32,7 @@ Lazar, Alan, Jeff, Peter
   - Modified the test and terminal message to meet the assignment requirement
   - Created dockerfile for backend
 - Containerization
-  - Created docker-compose file and test 
+  - Created docker-compose file and test
   - Created docker-compose.prod.yml file for future usage
 - CI/CD
   - Created GitHub action config file for testing and building both backend and frontend
@@ -47,10 +47,11 @@ Lazar, Alan, Jeff, Peter
 - Create proper docs for the project and submit the assignment.
 
 #### Signed by:
+
 - [x] Alan
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 
 ---
 
@@ -93,10 +94,11 @@ Lazar, Alan, Jeff, Peter
 - Begin working on first milestone
 
 #### Signed by:
+
 - [x] Alan
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 
 ---
 
@@ -131,10 +133,11 @@ Lazar, Alan, Jeff, Peter
 - Research on the rest of the alternatives
 
 #### Signed by:
+
 - [x] Alan
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 
 ---
 
@@ -172,10 +175,11 @@ Lazar, Alan, Jeff, Peter
 - Continue working on the tech stack document
 
 #### Signed by:
+
 - [x] Alan
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 
 ---
 
@@ -232,9 +236,10 @@ Lazar, Alan, Jeff, Peter
 - Create a starter app after the write up is done
 
 #### Signed by:
+
 - [x] Alan
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 
 ---
