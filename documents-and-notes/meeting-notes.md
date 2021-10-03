@@ -47,6 +47,10 @@ Lazar, Alan, Jeff, Peter
 - Create proper docs for the project and submit the assignment.
 
 #### Signed by:
+- [x] Alan
+- [ ] Jeff
+- [ ] Lazar
+- [ ] Peter
 
 ---
 
@@ -89,6 +93,10 @@ Lazar, Alan, Jeff, Peter
 - Begin working on first milestone
 
 #### Signed by:
+- [x] Alan
+- [ ] Jeff
+- [ ] Lazar
+- [ ] Peter
 
 ---
 
@@ -123,6 +131,10 @@ Lazar, Alan, Jeff, Peter
 - Research on the rest of the alternatives
 
 #### Signed by:
+- [x] Alan
+- [ ] Jeff
+- [ ] Lazar
+- [ ] Peter
 
 ---
 
@@ -160,6 +172,10 @@ Lazar, Alan, Jeff, Peter
 - Continue working on the tech stack document
 
 #### Signed by:
+- [x] Alan
+- [ ] Jeff
+- [ ] Lazar
+- [ ] Peter
 
 ---
 
@@ -216,5 +232,9 @@ Lazar, Alan, Jeff, Peter
 - Create a starter app after the write up is done
 
 #### Signed by:
+- [x] Alan
+- [ ] Jeff
+- [ ] Lazar
+- [ ] Peter
 
 ---
