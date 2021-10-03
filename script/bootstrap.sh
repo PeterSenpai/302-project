@@ -5,6 +5,8 @@ set -o nounset
 
 IFS=$(printf '\n\t')
 
+sudo apt install curl
+
 # Docker
 sudo apt remove --yes docker docker-engine docker.io containerd runc || true
 sudo apt update
@@ -27,11 +29,11 @@ sleep 5
 # printf '\nDocker Compose installed successfully\n\n'
 # Docker Compose
 compose_release() {
-  curl --silent "https://api.github.com/repos/docker/compose/releases/latest" |
+  sudo curl --silent "https://api.github.com/repos/docker/compose/releases/latest" |
   grep -Po '"tag_name": "\K.*?(?=")'
 }
 
 if ! [ -x "$(command -v docker-compose)" ]; then
-  curl -L https://github.com/docker/compose/releases/download/$(compose_release)/docker-compose-$(uname -s)-$(uname -m) \
+  sudo curl -L https://github.com/docker/compose/releases/download/$(compose_release)/docker-compose-$(uname -s)-$(uname -m) \
   -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
 fi
