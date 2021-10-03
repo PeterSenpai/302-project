@@ -1,5 +1,55 @@
 # Meeting Notes
 
+### October 2nd:
+
+#### Meeting Length:
+
+1.75 hours
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Present what each member did during the past week and if there are any questions or concerns (5 minutes)
+- Combining all the starter codes from each member and establish the infrastructure (90 minutes)
+- Create action items for the write-up.
+
+#### Things that were done:
+
+- Each team member walked through the start code they wrote.
+- Decided on the folder structure and agree on the basic development environment setup.
+  - One repo monolithic setup with 2 folders, one for frontend and one for backend
+  - Set up linters and pre-commit script
+- Created frontend folder
+  - Used create react app
+  - Modified the test and landing page to meet the assignment requirement
+  - Created dockerfile for frontend
+- Create backend folder
+  - Implemented a simple HTTP server using express
+  - Used Jest and supertest to create a mock API test
+  - Modified the test and terminal message to meet the assignment requirement
+  - Created dockerfile for backend
+- Containerization
+  - Created docker-compose file and test 
+  - Created docker-compose.prod.yml file for future usage
+- CI/CD
+  - Created GitHub action config file for testing and building both backend and frontend
+  - Connected the repo to Heroku and create the config file and env var accordingly
+  - Connected the repo to Netlify and configuration turning.
+- Created 3 scripts for installing dependencies, running the project, testing the project.
+
+#### Next steps/Action Items:
+
+- Finished the report and other write-ups.
+- Double-check the project to make sure everything works fine.
+- Create proper docs for the project and submit the assignment.
+
+#### Signed by:
+
+---
+
 ### September 28th:
 
 #### Meeting Length:
@@ -38,6 +88,8 @@ Lazar, Alan, Jeff, Peter
 - Prepare for TA meeting on Thursday
 - Begin working on first milestone
 
+#### Signed by:
+
 ---
 
 ### September 26th:
@@ -69,6 +121,8 @@ Lazar, Alan, Jeff, Peter
 
 - Wait for professor’s response to new project request
 - Research on the rest of the alternatives
+
+#### Signed by:
 
 ---
 
@@ -104,6 +158,8 @@ Lazar, Alan, Jeff, Peter
 
 - Wait until we know what project we get to work on
 - Continue working on the tech stack document
+
+#### Signed by:
 
 ---
 
@@ -158,5 +214,7 @@ Lazar, Alan, Jeff, Peter
     - Backend: Peter
     - Testing: Lazar
 - Create a starter app after the write up is done
+
+#### Signed by:
 
 ---
