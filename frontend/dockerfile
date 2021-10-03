@@ -7,3 +7,5 @@ COPY package.json ./
 RUN npm install
 
 CMD ["npm","run","start"]
+# ENTRYPOINT ["tail"]
+# CMD ["-f","/dev/null"]
