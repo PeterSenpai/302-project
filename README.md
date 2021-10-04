@@ -30,5 +30,5 @@ Go to [http://localhost:3000](http://localhost:3000) in your browser to view the
 ### Run tests
 
 ```bash
-sudo docker-compose -f docker-compose.yml run backend npm run test && sudo docker-compose -f docker-compose.yml run frontend npm run test
+chmod +x ./script/test.sh && ./script/test.sh
 ```
