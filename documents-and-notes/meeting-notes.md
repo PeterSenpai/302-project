@@ -1,5 +1,53 @@
 # Meeting Notes
 
+### October 14th:
+
+#### Meeting Length:
+
+1 hour
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Discuss A2 and the deliverables (5 minutes)
+- Plan out the features and begin planning subtasks and their due dates (30-40 minutes)
+- Plan next steps and what things need to be done before the next meeting (10 minutes)
+- Discuss any concerns about A1 (5 minutes)
+
+#### Things that were done:
+
+- Looked at the various deliverables for A2 and discussed them and the order that we will do them in.
+  - We decided that the hardest part will be the development of the features so we will prioritize that.
+  - The demonstrated progress document will be worked on in parallel.
+  - The postmortem for A1 can be done in a constant amount of time so we will leave that for later, but not too late since we want to work on it with A1 still fresh in our minds.
+  - We began working on the features document.
+    - We split up the next two milestones into 4 features and prioritized them, as well as discussed which ones can be dropped if there isn’t enough time.
+    - For each feature, we came up with a list of subtasks.
+    - For the first two features, we assigned the subtasks to group members and set due dates for each subtask.
+    - For the first feature, the first two subtasks can be done in parallel but will need to be merged in order to finish the other two subtasks. However, work can be started on the third and fourth subtasks before the first two are fully complete.
+    - For the second feature, the first two subtasks will require the most work and will need to be finished first and merged in order to complete the remaining three tasks. The last task can be started while the other tasks are still in progress.
+  - Upon discussing the task of interpreting the JSON questionnaire, we decided that we will need to do some further research and get in contact with Alex to raise any questions and get some clarification.
+- We discussed what needs to be done before the next group meeting, but concluded that we can call a group meeting or smaller meetings with only a couple group members, in the meantime, if needed.
+- Discussed our thoughts and concerns for A1
+
+#### Next steps/Action Items:
+
+- Each teammate will begin work on their first subtask.
+- Get in contact with Alex to discuss some things related to the questionnaires.
+- Begin working on the postmortem of A1.
+
+#### Signed by:
+
+- [x] Alan
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+
+---
+
 ### October 2nd:
 
 #### Meeting Length:
