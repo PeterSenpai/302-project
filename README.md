@@ -4,7 +4,7 @@
 <br/><br/>
 
 ## Documentation and notes
-Our preliminary project development plan, description of the tech stack, and meeting notes are all located in the `/documents-and-notes/` directory of this repo. 
+Our features document, preliminary project development plan, description of the tech stack, and meeting notes are all located in the `/documents-and-notes/` directory of this repo. 
 
 <br/><br/>
 
