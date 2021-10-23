@@ -24,7 +24,7 @@ Lazar, Alan, Peter
 - Researched on different questionnaire JSONs
   - Some questionnaires have fields that are linked to other websites and requires an account
   - We will discuss with Alex about these questionnaires
-  - For the time being, only the other questionnaires will be rendered in the UI 
+  - For the time being, only the other questionnaires will be rendered in the UI
 - Discussed the practicability of rendering a hard-code questionnaire in the UI before all API endpoints are completed
   - Questionnaire JSON should be collected from the back end through the API
   - Due to time constraint, we decided that it is better to hard code a questionnaire in the front end before back end is completed and replace it afterwards
@@ -34,6 +34,7 @@ Lazar, Alan, Peter
 - Scheduled a meeting on October 23rd with Jeff to discuss his progress and blockers
 
 #### Next steps/Action Items:
+
 - Reach out to Alex to schedule a meeting during weekend to discuss his expectation on the project
 - Work on postmortem on A1
 - Continue to work on front end, back end
@@ -43,7 +44,7 @@ Lazar, Alan, Peter
 - [x] Alan
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 
 ---
 
