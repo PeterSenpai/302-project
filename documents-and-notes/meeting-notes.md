@@ -1,5 +1,53 @@
 # Meeting Notes
 
+### October 22nd:
+
+#### Meeting Length:
+
+30 minutes
+
+#### Attendees:
+
+Lazar, Alan, Peter
+
+#### Agenda (ordered by priority):
+
+- Discuss progress made on current tasks (5 minutes)
+- Discuss blockers faced and their solutions (10 minutes)
+- Review things discussed with Alex on October 18 in-class meeting (10 minutes)
+- Plan next steps and what things need to be done before the next meeting (5 minutes)
+
+#### Things that were done:
+
+- Completed features document
+- Implemented part of the API endpoints
+- Researched on different questionnaire JSONs
+  - Some questionnaires have fields that are linked to other websites and requires an account
+  - We will discuss with Alex about these questionnaires
+  - For the time being, only the other questionnaires will be rendered in the UI
+- Discussed the practicability of rendering a hard-code questionnaire in the UI before all API endpoints are completed
+  - Questionnaire JSON should be collected from the back end through the API
+  - Due to time constraint, we decided that it is better to hard code a questionnaire in the front end before back end is completed and replace it afterwards
+- Reviewed an existing FHIR project that Alex mentioned in the in-class meeting
+  - Alex said we can use part of the project
+  - We discussed how the project can be used to fulfil the features we are implementing
+- Scheduled a meeting on October 23rd with Jeff to discuss his progress and blockers
+
+#### Next steps/Action Items:
+
+- Reach out to Alex to schedule a meeting during weekend to discuss his expectation on the project
+- Work on postmortem on A1
+- Continue to work on front end, back end
+
+#### Signed by:
+
+- [x] Alan
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+
+---
+
 ### October 14th:
 
 #### Meeting Length:
