@@ -41,7 +41,7 @@ Lazar, Alan, Peter
 #### Signed by:
 
 - [x] Alan
-- [ ] Jeff
+- [x] Jeff
 - [x] Lazar
 - [ ] Peter
 
