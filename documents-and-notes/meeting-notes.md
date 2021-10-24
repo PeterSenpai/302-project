@@ -26,20 +26,18 @@ Lazar, Jeff, Peter
   - Questionnaire example without external link
     - https://www.hl7.org/fhir/questionnaire-zika-virus-exposure-assessment.json.html
 
-
 #### Next steps/Action Items:
 
 - Look into the mock FHIR app implementation Alex said
 - Write a route in backend to provide questionnaires in json format
-E.g. http://localhost:8080/api/questionnaires
+  E.g. http://localhost:8080/api/questionnaires
 - Continue to work on front end, back end
-
 
 #### Signed by:
 
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 
 ---
 
