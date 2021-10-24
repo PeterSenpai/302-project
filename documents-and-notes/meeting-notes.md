@@ -1,5 +1,49 @@
 # Meeting Notes
 
+### October 23rd:
+
+#### Meeting Length:
+
+30 minutes
+
+#### Attendees:
+
+Lazar, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Recap on the features that we aim to implement in this milestone
+- Discuss on individual responsibilities on fetching vs parsing questionnaires
+- Progress check-in for backend
+
+#### Things that were done:
+
+- Define fetching endpoint structure
+  - For now, only handle questionnaire without external links to options
+  - JSON specification: https://www.hl7.org/fhir/json.html
+  - Questionnaire example with external link
+    - https://www.hl7.org/fhir/questionnaire-cqf-example.json.html
+  - Questionnaire example without external link
+    - https://www.hl7.org/fhir/questionnaire-zika-virus-exposure-assessment.json.html
+
+
+#### Next steps/Action Items:
+
+- Look into the mock FHIR app implementation Alex said
+- Write a route in backend to provide questionnaires in json format
+E.g. http://localhost:8080/api/questionnaires
+- Continue to work on front end, back end
+
+
+#### Signed by:
+
+- [] Alan
+- [x] Jeff
+- [] Lazar
+- [] Peter
+
+---
+
 ### October 22nd:
 
 #### Meeting Length:
