@@ -12,9 +12,9 @@ Lazar, Jeff, Peter
 
 #### Agenda (ordered by priority):
 
-- Recap on the features that we aim to implement in this milestone
-- Discuss on individual responsibilities on fetching vs parsing questionnaires
-- Progress check-in for backend
+- Recap on the features that we aim to implement in this milestone (10 minutes)
+- Discuss on individual responsibilities on fetching vs parsing questionnaires (10 minutes)
+- Progress check-in for backend (10 minutes)
 
 #### Things that were done:
 
@@ -37,10 +37,9 @@ E.g. http://localhost:8080/api/questionnaires
 
 #### Signed by:
 
-- [] Alan
 - [x] Jeff
-- [] Lazar
-- [] Peter
+- [x] Lazar
+- [ ] Peter
 
 ---
 
@@ -86,7 +85,6 @@ Lazar, Alan, Peter
 #### Signed by:
 
 - [x] Alan
-- [x] Jeff
 - [x] Lazar
 - [x] Peter
 
