@@ -25,24 +25,32 @@ Lazar, Alan, Jeff, Peter, Alex
     - the example questionnaires only work with cql-worker which has the same problem
   - For the demo app
     - Only in Vue and uses SurveyJs
-- Ask Alex about the scope
+- Asked Alex about the scope
   - The complexity of the questionnaires app
   - The coverage of all the FHIR questionnaires
-- Ask about the copyright issues
+- Asked about the copyright issues
   - So far, we can reuse any logic from the two repos.
+- Asked Alex about what constitutes success for milestones 2 and 3
+  - Milestone 2:
+    - A questionnaire should be rendered
+    - The user should be able to interact with it
+  - Milestone 3:
+    - The server must accept the response and the response must conform to the specification
+    - Validate against test server
+    - The JSON questionnaire response that we generate must be compliant with the standard
 
 #### Next steps/Action Items:
 
-- Tried to use the existing logic and React to create questionnaire
-- Tried to implement the parsing logic for example questionnaires
-- Time box the previous two and see which one is more doable.
+- Try to use the existing logic and React to create questionnaire
+- Try to implement the parsing logic for example questionnaires
+- Time box the previous two and see which one is more doable
+- Add the information from Alex to the progress document
 
 #### Signed by:
 
 - [ ] Jeff
-- [ ] Lazar
+- [x] Lazar
 - [x] Peter
-- [x] Alex
 - [x] Alan
 
 ---
