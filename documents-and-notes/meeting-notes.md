@@ -43,7 +43,7 @@ Lazar, Alan, Jeff, Peter, Alex
 - [ ] Lazar
 - [x] Peter
 - [x] Alex
-- [ ] Alan
+- [x] Alan
 
 ---
 
