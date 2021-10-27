@@ -15,3 +15,19 @@ describe('GET /test', () => {
       });
   });
 });
+
+describe('GET /api/questionnaires', () => {
+  it('should return JSON questionnaires', async() => {
+    request(app)
+      .get('/api/questionnaires')
+      .expect(200)
+      .end((err, res) => {
+        if (err) {
+          throw new Error('Failed to get questionnaires');
+        }
+        for(let i = 0; i < res.body.length; i++){
+          expect(res.body[i].resourceType).toBe('Questionnaire');
+        }
+      });
+  });
+});
