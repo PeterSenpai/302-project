@@ -4,6 +4,61 @@
 
 #### Meeting Length:
 
+45 minutes
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter, Alex
+
+#### Agenda (ordered by priority):
+
+- Ask Alex questions that we have that are important for us to continue work on the assignment. (15-20 minutes)
+- Ask Alex what constitutes success for the milestones that we are working on with this assignment. This is needed for the progress document which is a deliverable for A2. (10-15 minutes)
+
+#### Things that were done:
+
+- Discussed the findings with Alex
+  - For the existing converter there are some problems
+    - no npm support
+    - some module issues
+    - only work with vue
+    - the example questionnaires only work with cql-worker which has the same problem
+  - For the demo app
+    - Only in Vue and uses SurveyJs
+- Asked Alex about the scope
+  - The complexity of the questionnaires app
+  - The coverage of all the FHIR questionnaires
+- Asked about the copyright issues
+  - So far, we can reuse any logic from the two repos.
+- Asked Alex about what constitutes success for milestones 2 and 3
+  - Milestone 2:
+    - A questionnaire should be rendered
+    - The user should be able to interact with it
+  - Milestone 3:
+    - The server must accept the response and the response must conform to the specification
+    - Validate against test server
+    - The JSON questionnaire response that we generate must be compliant with the standard
+
+#### Next steps/Action Items:
+
+- Try to use the existing logic and React to create questionnaire
+- Try to implement the parsing logic for example questionnaires
+- Time box the previous two and see which one is more doable
+- Add the information from Alex to the progress document
+
+#### Signed by:
+
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+- [x] Alan
+
+---
+
+### October 23rd:
+
+#### Meeting Length:
+
 30 minutes
 
 #### Attendees:
