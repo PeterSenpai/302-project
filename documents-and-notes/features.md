@@ -1,6 +1,10 @@
 # Features
 
-Upon completing the first milestone, we have decided to plan out the next two milestones. We have created a list of features for these milestones, and have broken them up into subtasks, the first of which have been assigned to team members and given due dates. We prioritized them based on what features and tasks need to be completed first before others can be worked on. We strive to have a working application first, before having lots of features. Working on many features at the same time without having a basic working application will lead to scrambling and chaos when everything needs to be merged and integrated. Further, we have defined acceptance criteria for each feature. This is how we expect the team members as well as the client to validate our work and determine that it is complete and correct. The remaining features have been created as part of the roadmap, but the due dates will be set at a later date along with assigning the tasks to team members. The features with lower priorities are ones that can be dropped if there is not enough time to accomplish them as the higher priority features require the most focus.
+Upon completing the first milestone, we have decided to plan out the next two milestones. We have created a list of features for these milestones, and have broken them up into subtasks, the first of which have been assigned to team members and given due dates. We prioritized them based on what features and tasks need to be completed first before others can be worked on. We strive to have a working application first, before having lots of features. Working on many features at the same time without having a basic working application will lead to scrambling and chaos when everything needs to be merged and integrated.
+
+Further, we have defined acceptance criteria for each feature. This is how we expect the team members as well as the client to validate our work and determine that it is complete and correct. We will also perform a series of acceptance tests that will involve both manual testing of the UI and running tests from our test suite. This will include tests such as incorrect input, input that is too large, edge cases, invalid format which isn't compliant with the standard specifications, etc., as well as correct input and format.
+
+The remaining features have been created as part of the roadmap, but the due dates will be set at a later date along with assigning the tasks to team members. The features with lower priorities are ones that can be dropped if there is not enough time to accomplish them as the higher priority features require the most focus.
 
 ---
 
@@ -77,7 +81,7 @@ With this feature the backend will connect to the open source FHIR endpoint and 
 
 ---
 
-## Feature 4: Choosing a questionnaire (this feature is lower priority)
+## Feature 4: Choosing a questionnaire (this feature has lower priority)
 For this feature, the user will have the ability to choose a questionnaire from a list of available questionnaires that they will be presented with in the UI. The chosen questionnaire will then be rendered to the user. To accomplish this feature, the following tasks will need to be completed.
 
 ### Tasks:
@@ -91,7 +95,7 @@ For this feature, the user will have the ability to choose a questionnaire from 
 
 ---
 
-## Feature 5: Log-in (this feature is lower priority)
+## Feature 5: Log-in (this feature has lower priority)
 With this feature we will be adding a login screen for application. The entered information will be checked with the backend and a successful login will take the user to the first page of the application. To accomplish this feature, the following tasks will need to be completed.
 
 ### Tasks:
