@@ -1,6 +1,6 @@
 # Meeting Notes
 
-### October 26th:
+### October 23rd:
 
 #### Meeting Length:
 
