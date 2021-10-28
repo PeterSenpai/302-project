@@ -1,6 +1,57 @@
 # Meeting Notes
 
-### October 23rd:
+### October 28th:
+
+#### Meeting Length:
+
+1 hour
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Do the A1 postmortem (30 minutes)
+  - What was achieved?
+  - What went wrong?
+  - What adjustments need to be made?
+- Discuss progress of project and what needs to be worked on next (20-25 minutes)
+
+#### Things that were done:
+
+- Performed A1 postmortem
+  - Discussed what goals were completed
+    - All A1 goals have been achieved
+  - Analyzed what went wrong and how we overcame it
+    - Environment issues with containerization that were fixed
+    - Delay due to switching projects
+  - Discussed what adjustments would need to be made with the knowledge and what we have learned from A1 and the current work on A2
+    - Switch UI from Material UI to Ant Design because there are more components that are useful for us and is easier to use
+- Discussed findings about libraries that can be used for rendering the questionnaires
+  - Found a new library that is much better and can convert the questionnaire JSON into a schema which is more readable and easier to render
+  - The library is also able to convert the user’s response to a proper FHIR questionnaire response
+- Discussed what the backend will need to do for receiving the response and sending it to the FHIR endpoint
+- Planned what the questionnaire page will look like
+  - To include a title, the questionnaire, and a submit button
+  - As we add support for more questionnaires, there will be an option to go back to the questionnaire select screen
+
+#### Next steps/Action Items:
+
+- Finalize and clean up the A1 postmortem document
+- Continue work on rendering the questionnaire on the frontend
+- Begin work on the backend endpoint for receiving the questionnaire response
+
+#### Signed by:
+
+- [ ] Jeff
+- [x] Lazar
+- [ ] Peter
+- [ ] Alan
+
+---
+
+### October 26th:
 
 #### Meeting Length:
 
