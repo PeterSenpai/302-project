@@ -7,6 +7,14 @@ import { Layout, Form, Input, Button, Radio  } from 'antd';
 const { Header, Content, Footer } = Layout;
 
 function App() {
+  const onFinish = (values) => {
+    console.log('Success:', values);
+  };
+
+  const onFinishFailed = (errorInfo) => {
+    console.log('Failed:', errorInfo);
+  };
+
 
   return (
     <Layout className="layout">
