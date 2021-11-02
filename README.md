@@ -9,10 +9,11 @@ A web app which renders a JSON FHIR Questionnaire and submits the user response 
 
 ## Documentation and notes
 The following documents are located in the [`/documents-and-notes/`](documents-and-notes/) directory of this repo:
--  Meeting notes
--  Preliminary project development plan
--  Description of the tech stack
--  Features outline document
+-  [Meeting notes](documents-and-notes/meeting-notes.md) (Ongoing)
+-  [Preliminary project development plan](documents-and-notes/project-dev-plan.md) (A1)
+-  [Description of the tech stack](documents-and-notes/tech-stack.md) (A1)
+-  [Features outline document](documents-and-notes/features.md) (A2)
+-  [A1 postmortem](documents-and-notes/a1-postmortem.md) (A2)
 -  [Progress document](documents-and-notes/progress.md) (A2)
 
 <br/>
