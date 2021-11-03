@@ -51,4 +51,4 @@ Each team member had the following tasks in order to complete the two features f
 - Send the user’s response
   - Status: not started
 
-Upon completing the features set out for this assignment, we ran our acceptance tests and verified that all acceptance criteria was satisfied for the completed tasks. We also made sure that our industry partner’s definition of success was achieved.
+Upon completing the features set out for this assignment, we performed our acceptance tests and verified that all acceptance criteria was satisfied for the completed tasks. We also made sure that our industry partner’s definition of success was achieved.
