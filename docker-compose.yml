@@ -24,6 +24,7 @@ services:
     environment:
       # This env var is need for hot reload https://github.com/facebook/create-react-app/issues/1049
       CHOKIDAR_USEPOLLING: 'true'
+      NODE_ENV: 'development'
     volumes:
       - ./frontend/:/usr/src/app/frontend
       - /usr/src/app/frontend/node_modules

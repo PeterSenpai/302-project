@@ -17,10 +17,11 @@ function App() {
       const { data } = await axios.get('/api/questionnaires');
       setQuestionnaires(data);
     };
-    if (process.env.NODE_ENV === 'production') {
-      fetData();
-    } else {
+
+    if (process.env.NODE_ENV === 'test') {
       setQuestionnaires(mockData);
+    } else {
+      fetData();
     }
   }, []);
   return (
