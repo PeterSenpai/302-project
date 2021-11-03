@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { Layout } from 'antd';
 import axios from 'axios';
 import Questionnaire from './Questionnaire';
+import mockData from './mockQuestionnires.json';
 
 const { Header, Content } = Layout;
 
@@ -16,7 +17,11 @@ function App() {
       const { data } = await axios.get('/api/questionnaires');
       setQuestionnaires(data);
     };
-    fetData();
+    if (process.env.NODE_ENV === 'production') {
+      fetData();
+    } else {
+      setQuestionnaires(mockData);
+    }
   }, []);
   return (
     <Layout className="layout">
