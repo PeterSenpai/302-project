@@ -2,6 +2,8 @@ version: '3.8'
 services:
   backend:
     container_name: backend
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     build:
       context: ./backend
       dockerfile: dockerfile
@@ -17,6 +19,8 @@ services:
 
   frontend:
     container_name: frontend
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
     build:
       context: ./frontend
       dockerfile: dockerfile
