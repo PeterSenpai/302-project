@@ -11,7 +11,6 @@ const __dirname = path.dirname(__filename);
 
 const QUESTIONNAIRES_FILE = path.join(__dirname, './questionnaires.json');
 
-
 const app = express();
 
 app.use(cors());
@@ -23,11 +22,14 @@ app.get('/test', (req, res) => {
 
 app.get('/api/questionnaires', (req, res) => {
   let ques = JSON.parse(readFileSync(QUESTIONNAIRES_FILE));
-  res
-  .json(ques)
-  .status(200)
-  .send();
-})
+  return res.status(200).json(ques);
+});
+
+app.post('/api/response', (req, res) => {
+  console.log('\n ========= Response of questionnaire =========\n');
+  console.log(req.body);
+  return res.status(200).json({ message: 'success' });
+});
 
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, '../frontend/build')));
