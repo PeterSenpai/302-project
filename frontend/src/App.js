@@ -1,4 +1,3 @@
-import 'antd/dist/antd.css';
 import './App.css';
 import './index.css';
 import React, { useEffect, useState } from 'react';
