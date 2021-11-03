@@ -1,12 +1,21 @@
 <h1 align="center">Parajuniper Project #1: Patient Questionnaire App</h1>
 <h2 align="center">Team JAPL</h2>
 
-<br/><br/>
+<br/>
+
+A web app which renders a JSON FHIR Questionnaire and submits the user response using a standardized FHIR API to an Open Source FHIR EndPoint (HAPI FHIR).
+
+<br/>
 
 ## Documentation and notes
-Our preliminary project development plan, description of the tech stack, and meeting notes are all located in the `/documents-and-notes/` directory of this repo. 
+The following documents are located in the [`/documents-and-notes/`](documents-and-notes/) directory of this repo:
+-  [Meeting notes](documents-and-notes/meeting-notes.md) (Ongoing)
+-  [Preliminary project development plan](documents-and-notes/project-dev-plan.md) (A1)
+-  [Description of the tech stack](documents-and-notes/tech-stack.md) (A1)
+-  [Features outline document](documents-and-notes/features.md) (A2)
+-  [A1 postmortem](documents-and-notes/a1-postmortem.md) (A2)
 
-<br/><br/>
+<br/>
 
 ## Instructions and commands to install, build & run, and test
 
