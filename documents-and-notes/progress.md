@@ -14,39 +14,39 @@ Each team member had the following tasks in order to complete the two features f
 ### Feature 1:
 - Choose which questionnaire we want to use
   - Assigned to: Team
-  - Status:
+  - Status: complete
 - Read and understand FHIR documentation, fetch questionnaire in backend, and send it to frontend
   - Assigned to: Jefferson
-  - Status:
+  - Status: complete
 - Interpret the questionnaire JSON into formats that are suitable for frontend
   - Assigned to: Peter
-  - Status:
+  - Status: complete
 - Design, implement, and render the UI components from the interpreted information
   - Assigned to: Alan
-  - Status:
+  - Status: complete
 - Write tests for the frontend and backend work done in this feature
   - Assigned to: Lazar
-  - Status:
+  - Status: in progress
 ### Feature 2:
 - Design a response class according to FHIR endpoint’s format
   - Assigned to: Jefferson
-  - Status:
+  - Status: complete
 - Handle questionnaire form-filling including performing some validation
   - Assigned to: Peter
-  - Status:
+  - Status: complete
 - Create the user’s response object
   - Assigned to: Alan
-  - Status:
+  - Status: complete
 - Send the object to the backend
   - Assigned to: Lazar
-  - Status:
+  - Status: complete
 - Write tests for the frontend and backend work done in this feature
   - Assigned to: Lazar
-  - Status:
+  - Status: in progress
 ### Feature 3:
 - Understand FHIR and what format is needed for sending the response
-  - Status:
+  - Status: in progress
 - Connect to the open source endpoint
-  - Status:
+  - Status: not started
 - Send the user’s response
-  - Status:
+  - Status: not started
