@@ -26,7 +26,7 @@ Each team member had the following tasks in order to complete the two features f
   - Status: complete
 - Write tests for the frontend and backend work done in this feature
   - Assigned to: Lazar
-  - Status: in progress
+  - Status: complete
 ### Feature 2:
 - Design a response class according to FHIR endpoint’s format
   - Assigned to: Jefferson
@@ -42,7 +42,7 @@ Each team member had the following tasks in order to complete the two features f
   - Status: complete
 - Write tests for the frontend and backend work done in this feature
   - Assigned to: Lazar
-  - Status: in progress
+  - Status: complete
 ### Feature 3:
 - Understand FHIR and what format is needed for sending the response
   - Status: in progress
@@ -50,3 +50,5 @@ Each team member had the following tasks in order to complete the two features f
   - Status: not started
 - Send the user’s response
   - Status: not started
+
+Upon completing the features set out for this assignment, we ran our acceptance tests and verified that all acceptance criteria was satisfied for the completed tasks. We also made sure that our industry partner’s definition of success was achieved.
