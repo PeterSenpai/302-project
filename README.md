@@ -14,6 +14,7 @@ The following documents are located in the [`/documents-and-notes/`](documents-a
 -  [Description of the tech stack](documents-and-notes/tech-stack.md) (A1)
 -  [Features outline document](documents-and-notes/features.md) (A2)
 -  [A1 postmortem](documents-and-notes/a1-postmortem.md) (A2)
+-  [Progress document](documents-and-notes/progress.md) (A2)
 
 <br/>
 
