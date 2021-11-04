@@ -51,8 +51,7 @@ describe('GET /api/questionnaires', () => {
 
 describe('POST /api/response', () => {
   it('should receive questionnaire response', async() => {
-    const res = await request(app).post('/api/response')
-      				    .send(exampleResponse)
+    const res = await request(app).post('/api/response').send(exampleResponse)
     expect(res.statusCode).toBe(200);
   });
 });
