@@ -1,5 +1,49 @@
 # Meeting Notes
 
+### November 4th:
+
+#### Meeting Length:
+
+45 minutes
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Finalize A2 (10 minutes)
+- Discuss how we will move forward for A3 (30 minutes)
+
+#### Things that were done:
+
+- Finalized A2 and submitted
+  - Reviewed remaining PRs
+- Discussed how we will move forward for A3
+  - We will need to render questionnaires with nested components
+  - Two possibilities for this:
+    - Recursively render the components
+    - Flatten the JSON and then render it the same way we do so far
+      - Will need to keep track of the nested groups of items
+  - We will need to figure out how to store the response for each option
+  - Also discussed how we will test the interaction with the rendered form and what deeper tests will be needed for A3
+    - Tests that fill out the questionnaire in different ways
+
+#### Next steps/Action Items:
+
+- Look at the different questionnaire types and think about approaches to rendering the more complicated ones
+- Report findings at a team meeting
+- Plan out the subtasks for A3 and assign them to team members
+
+#### Signed by:
+
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+- [x] Alan
+
+---
+
 ### October 28th:
 
 #### Meeting Length:
