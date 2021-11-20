@@ -1,5 +1,53 @@
 # Meeting Notes
 
+### November 18th:
+
+#### Meeting Length:
+
+45 minutes
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Plan A3
+  - Discuss the work needed for frontend, backend, and documentation (30 minutes)
+  - Decide who will work on what task (15 minutes)
+
+#### Things that were done:
+
+- Plan A3
+  - A2 recap
+    - Most goals for the project have been completed
+    - Things that need to be improved: handle nested questionnaires
+      - Lazar and Peter will work on this in A3
+  - 1 non-optional feature remains:
+    - Sending the questionnaire response to FHIR endpoints
+      - This is the only non-optional feature
+      - Frontend already sends the response to backend 
+      - The team reviewed a demo FHIR RestAPI shared by Alex
+      - Alan and Jeff will work on backend
+  - 3 optional features remain:
+    - Handling nested questionnaires, Choosing a questionnaire, and Log-in
+    - Will work on them if the other feature is completed before due date
+  - Discussed what needs to be done for documentation for A3 and will get started on that
+
+#### Next steps/Action Items:
+
+- Begin work on assigned tasks
+- Begin documentation and plan a day to perform the A2 retrospective/postmortem
+
+#### Signed by:
+
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+- [x] Alan
+
+---
+
 ### November 4th:
 
 #### Meeting Length:
