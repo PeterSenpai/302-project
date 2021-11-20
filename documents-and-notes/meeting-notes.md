@@ -19,21 +19,20 @@ Lazar, Alan, Jeff, Peter
 #### Things that were done:
 
 - Plan A3
-  - A2 Restrospective
-    - Most goals have been completed
-    - Things that could have done better: handle nested questionnaires
-      - Lazar and Peter will work on this in A3 
-    - Template will be prepared by Lazar
+  - A2 recap
+    - Most goals for the project have been completed
+    - Things that need to be improved: handle nested questionnaires
+      - Lazar and Peter will work on this in A3
   - 1 non-optional feature remains:
     - Sending the questionnaire response to FHIR endpoints
       - This is the only non-optional feature
       - Frontend already sends the response to backend 
       - The team reviewed a demo FHIR RestAPI shared by Alex
       - Alan and Jeff will work on backend
-  - 2 optional features remain:
-    - Choosing a questionnaire and Log-in
+  - 3 optional features remain:
+    - Handling nested questionnaires, Choosing a questionnaire, and Log-in
     - Will work on them if the other feature is completed before due date
-
+  - Discussed what needs to be done for documentation for A3 and will get started on that
 
 #### Next steps/Action Items:
 
@@ -43,7 +42,7 @@ Lazar, Alan, Jeff, Peter
 #### Signed by:
 
 - [ ] Jeff
-- [ ] Lazar
+- [x] Lazar
 - [ ] Peter
 - [x] Alan
 
