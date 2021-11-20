@@ -43,7 +43,7 @@ Lazar, Alan, Jeff, Peter
 
 - [x] Jeff
 - [x] Lazar
-- [ ] Peter
+- [x] Peter
 - [x] Alan
 
 ---
