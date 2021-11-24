@@ -1,5 +1,97 @@
 # Meeting Notes
 
+### November 18th:
+
+#### Meeting Length:
+
+45 minutes
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Plan A3
+  - Discuss the work needed for frontend, backend, and documentation (30 minutes)
+  - Decide who will work on what task (15 minutes)
+
+#### Things that were done:
+
+- Plan A3
+  - A2 recap
+    - Most goals for the project have been completed
+    - Things that need to be improved: handle nested questionnaires
+      - Lazar and Peter will work on this in A3
+  - 1 non-optional feature remains:
+    - Sending the questionnaire response to FHIR endpoints
+      - This is the only non-optional feature
+      - Frontend already sends the response to backend 
+      - The team reviewed a demo FHIR RestAPI shared by Alex
+      - Alan and Jeff will work on backend
+  - 3 optional features remain:
+    - Handling nested questionnaires, Choosing a questionnaire, and Log-in
+    - Will work on them if the other feature is completed before due date
+  - Discussed what needs to be done for documentation for A3 and will get started on that
+
+#### Next steps/Action Items:
+
+- Begin work on assigned tasks
+- Begin documentation and plan a day to perform the A2 retrospective/postmortem
+
+#### Signed by:
+
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+- [x] Alan
+
+---
+
+### November 4th:
+
+#### Meeting Length:
+
+45 minutes
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Finalize A2 (10 minutes)
+- Discuss how we will move forward for A3 (30 minutes)
+
+#### Things that were done:
+
+- Finalized A2 and submitted
+  - Reviewed remaining PRs
+- Discussed how we will move forward for A3
+  - We will need to render questionnaires with nested components
+  - Two possibilities for this:
+    - Recursively render the components
+    - Flatten the JSON and then render it the same way we do so far
+      - Will need to keep track of the nested groups of items
+  - We will need to figure out how to store the response for each option
+  - Also discussed how we will test the interaction with the rendered form and what deeper tests will be needed for A3
+    - Tests that fill out the questionnaire in different ways
+
+#### Next steps/Action Items:
+
+- Look at the different questionnaire types and think about approaches to rendering the more complicated ones
+- Report findings at a team meeting
+- Plan out the subtasks for A3 and assign them to team members
+
+#### Signed by:
+
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+- [x] Alan
+
+---
+
 ### October 28th:
 
 #### Meeting Length:
