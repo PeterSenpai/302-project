@@ -1,5 +1,55 @@
 # Meeting Notes
 
+### November 25th:
+
+#### Meeting Length:
+
+45 minutes
+
+#### Attendees:
+
+Lazar, Alan, Jeff, Peter
+
+#### Agenda (ordered by priority):
+
+- Discuss progress of A3 on frontend and backend (20 minutes)
+- Perform A2 retrospective (20 minutes)
+- Discuss when we would prefer to present (Dec 6th or Dec 9th) (5 minutes)
+
+#### Things that were done:
+
+- Discussed progress
+  - Peter showed documentation for questionnaires and various examples. He discussed how to render the nested questionnaires, and the decision was to flatten nested items and render them one by one.
+  - Jeff and Alan will continue to work on the backend & testing.
+- Performed A2 retrospective
+  - What went well:
+    - We had good documentation, meeting notes, and postmortem
+    - The overall organization and teamwork was excellent, we completed the assignment days before the deadline and left buffer time for unforeseen circumstances.
+  - What didn’t go well:
+    - Some internal deadlines were not met on time but in the end everything was completed properly and correctly with time to test.
+  - Adjustments
+    - Changed approach for rendering questionnaires, instead of rendering nested questionnaires recursively, we will now flatten them and render one by one
+    - Might need to drop some of the extra optional features we had for A3
+- Discussed when we would want to present:
+  - Chose Dec 6, but we will need to ask for an earlier time slot because one team member will be in a different time zone for a conference.
+
+#### Next steps/Action Items:
+
+- Continue work on assigned tasks
+  - Peter and Lazar working on frontend
+  - Jeff and Alan working on backend
+- Finish A2 retrospective document (clean up and finalize)
+- Continue work on feature documentation for A3
+
+#### Signed by:
+
+- [x] Jeff
+- [x] Lazar
+- [x] Peter
+- [x] Alan
+
+---
+
 ### November 18th:
 
 #### Meeting Length:
