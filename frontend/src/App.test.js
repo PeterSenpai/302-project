@@ -4,8 +4,15 @@
 // testing the interaction with the rendered questionnaire and more specific tests for
 // the different components as well.
 
-// import { render, screen } from '@testing-library/react';
-// import App from './App';
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('placeholder', () => {
+  console.log(`========= Frontend: I am running a test! =========`);
+  render(<App />);
+  const Element = screen.getByText(/Name of child/i);
+  expect(Element).toBeInTheDocument();
+});
 
 // test('has zika question 1', () => {
 //   console.log(`========= Frontend: I am running a test! =========`);
