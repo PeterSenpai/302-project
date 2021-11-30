@@ -4,11 +4,10 @@ import express from 'express';
 import cors from 'cors';
 import superagent from 'superagent';
 
-
 // having these 4 lines for b/c of the "type": "module" in package.json
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { SSL_OP_EPHEMERAL_RSA } from 'constants';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -45,8 +44,9 @@ app.post('/api/response', (req, res) => {
     })
     .catch(err => {
       const response = JSON.parse(err.response.text);
-      console.error(err.message, response.issue[0]);
-      return res.status(err.status).json({ message: response.issue[0].diagnostics });
+      const issue = response.issue[0];
+      console.error(err.message, issue);
+      return res.status(err.status).json({ message: issue.diagnostics });
     });
 });
 
