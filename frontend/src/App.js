@@ -27,7 +27,7 @@ function App() {
     <Layout className="layout">
       <Header />
       <Content style={{ padding: '0 50px' }}>
-        {questionnaires.length !== 0 && <Questionnaire questionnare={questionnaires[0]} />}
+        {questionnaires.length !== 0 && <Questionnaire questionnare={questionnaires[1]} />}
       </Content>
     </Layout>
   );
