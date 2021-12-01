@@ -39,6 +39,7 @@ app.post('/api/response', (req, res) => {
     .send(quesResp)
     .set('Content-Type', 'application/json')
     .then(succResp => {
+      console.log('success');
       return res.status(200).json(succResp);
     })
     .catch(errResp => {
