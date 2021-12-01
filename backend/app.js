@@ -1,12 +1,12 @@
-import { readFileSync } from 'fs';
-
 import express from 'express';
 import cors from 'cors';
 import superagent from 'superagent';
 
+import { readFileSync } from 'fs';
 // having these 4 lines for b/c of the "type": "module" in package.json
 import path from 'path';
 import { fileURLToPath } from 'url';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,28 +25,29 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/api/questionnaires', (req, res) => {
-  let ques = JSON.parse(readFileSync(QUESTIONNAIRES_FILE));
+  const ques = JSON.parse(readFileSync(QUESTIONNAIRES_FILE));
   return res.status(200).json(ques);
 });
 
 app.post('/api/response', (req, res) => {
   console.log('\n ========= Response of questionnaire =========\n');
 
-  const ques = req.body;
-  const quesId = ques.id;
+  const quesResp = req.body;
+  console.log(quesResp);
   superagent
-    .put(QUESTIONNAIRE_RESPONSE_TEST_SERVER_URL + '/' + quesId)
-    .send(ques)
+    .post(QUESTIONNAIRE_RESPONSE_TEST_SERVER_URL)
+    .send(quesResp)
     .set('Content-Type', 'application/json')
-    .then(res => {
-      console.log('success');
-      return res.status(res.status);
+    .then(succResp => {
+      return res.status(200).json(succResp);
     })
-    .catch(err => {
-      const response = JSON.parse(err.response.text);
-      const issue = response.issue[0];
-      console.error(err.message, issue);
-      return res.status(err.status).json({ message: issue.diagnostics });
+    .catch(errResp => {
+      console.error('error');
+      console.error(errResp);
+      const errText = JSON.parse(errResp.response.text);
+      const issue = errText.issue[0];
+      console.error(errResp.message, issue);
+      return res.status(errResp.status).json({ message: issue.diagnostics });
     });
 });
 
