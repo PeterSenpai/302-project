@@ -44,3 +44,18 @@ Go to [http://localhost:3000](http://localhost:3000) in your browser to view the
 ```bash
 chmod +x ./script/test.sh && ./script/test.sh
 ```
+
+
+## Validation and Acceptance Criteria
+
+The following validation and acceptance criteria was agreed to with our industry partner Alex:
+- A questionnaire should be rendered accurately.
+- The user response should be captured and sent to the FHIR endpoint.
+
+Smaller, more specific acceptance criteria were set out by us for each feature of the project. We also consulted Alex as we created them. These can be found in the various feature documents listed above.
+
+The verification of the general criteria that was agreed to with our industry partner is demonstrated through the frontend and backend testing suites in our project. The tests can be run with one command as mentioned above. The criteria can also be verified by visiting the webpage and viewing the questionnaire, as well as filling it out. The console, for both the frontend and backend, can be checked for log output.
+
+Tests can be found here:
+- [Backend tests](backend/__tests__/app.test.js)
+- [Frontend tests](frontend/src/App.test.js)
