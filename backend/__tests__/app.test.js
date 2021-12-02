@@ -1,22 +1,15 @@
 import request from 'supertest';
 import app from '../app.js';
+import { readFileSync } from 'fs';
+// having these 4 lines for b/c of the "type": "module" in package.json
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const exampleResponse = {
-  resourceType: 'QuestionnaireResponse',
-  item: [
-    {
-      linkId: '1',
-      text: 'Are you a resident of, or do you travel frequently to, an area with active Zika transmission?',
-      answer: [ { valueBoolean: true } ]
-    },
-    {
-      linkId: '2',
-      text: 'How long has it been since you returned?',
-      answer: [ { valueString: '10 days' } ] 
-    }
-  ],
-  status: 'in-progress'
-}
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const EXAMPLE_RESPONSE_FILE = path.join(__dirname, './example-response.json');
+const exampleResponse = JSON.parse(readFileSync(EXAMPLE_RESPONSE_FILE));
+
 
 describe('GET /test', () => {
   it('should return welcome text', async () => {
@@ -51,7 +44,7 @@ describe('GET /api/questionnaires', () => {
 
 describe('POST /api/response', () => {
   it('should receive questionnaire response', async() => {
-    const res = await request(app).post('/api/response').send(exampleResponse)
+    const res = await request(app).post('/api/response').send(exampleResponse);
     expect(res.statusCode).toBe(200);
   });
 });

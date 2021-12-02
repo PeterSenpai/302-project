@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

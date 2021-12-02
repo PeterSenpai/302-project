@@ -68,7 +68,7 @@ export default function Questionnaire({ questionnare }) {
           resValue = resValue.format('YYYY-MM-DD');
         }
         if (resType === 'valueDateTime') {
-          resValue = JSON.stringify(resValue);
+          resValue = JSON.stringify(resValue).replace(/['"]+/g, '');
         }
         if (resType === 'valueTime') {
           resValue = resValue.format('hh:mm:ss');
