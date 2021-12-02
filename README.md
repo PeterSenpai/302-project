@@ -16,6 +16,7 @@ The following documents are located in the [`/documents-and-notes/`](documents-a
 -  [A1 postmortem](documents-and-notes/a1-postmortem.md) (A2)
 -  [Progress document](documents-and-notes/progress.md) (A2)
 -  [A2 retrospective](documents-and-notes/a2-retrospective.md) (A3)
+-  [Feature Overview](documents-and-notes/feature-overview.md) (A3)
 
 <br/>
 
