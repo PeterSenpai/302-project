@@ -1,9 +1,82 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import { updateValueByLinkIdAndResponseType, extractItems } from './questionnaireParser';
-import mockData from './mockQuestionnires.json';
 
-expected_questions = [
+const questionnaire = {
+    "resourceType": "Questionnaire",
+    "id": "bb",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <pre>\n        <b>Birth details - To be completed by health professional</b>\n  Name of child: ____________________________________\n            Sex: __\n            \n  Neonatal Information\n    Birth Weight (kg): ___________\n    Birth Length (cm): ___________\n    Vitamin K given  : __\n             1st dose: ___________\n             2nd dose: ___________\n    Hep B given      : __\n      Date given     : ___________\n    Abnormalities noted at birth:\n      _______________________________________________\n      </pre>\n    </div>"
+    },
+    "url": "http://hl7.org/fhir/Questionnaire/bb",
+    "title": "NSW Government My Personal Health Record",
+    "status": "draft",
+    "subjectType": ["Patient"],
+    "date": "2013-02-19",
+    "publisher": "New South Wales Department of Health",
+    "jurisdiction": [
+      {
+        "coding": [
+          {
+            "system": "urn:iso:std:iso:3166",
+            "code": "AU"
+          }
+        ]
+      }
+    ],
+    "item": [
+      {
+        "linkId": "birthDetails",
+        "text": "Birth details - To be completed by health professional",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "group",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "nameOfChild",
+                "text": "Name of child",
+                "type": "string"
+              },
+              {
+                "linkId": "sex",
+                "text": "Sex",
+                "type": "choice",
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "code": "F"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "M"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "neonatalInformation",
+            "text": "Neonatal Information",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "birthWeight",
+                "text": "Birth weight (kg)",
+                "type": "decimal"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
+const expected_questions = [
   {
     "linkId": "nameOfChild",
     "text": "Name of child",
@@ -36,7 +109,7 @@ expected_questions = [
   }
 ];
 
-expected_response = [
+const expected_response = [
   {
     "item": [
       {
@@ -82,12 +155,12 @@ expected_response = [
 ]
 
 test('render logic is correct', () => {
-  const questions = extractItems(mockData[1]).question;
+  const questions = extractItems(questionnaire).question;
   expect(questions).toEqual(expected_questions);
 });
 
 test('creating blank questionnaire response is correct', () => {
-  const resp = extractItems(mockData[1]).item;
+  const resp = extractItems(questionnaire).item;
   expect(resp).toEqual(expected_response);
 });
 
