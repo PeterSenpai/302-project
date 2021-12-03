@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import { updateValueByLinkIdAndResponseType, extractItems } from './questionnaireParser';
+import mockData from './mockQuestionnires.json';
 
 expected_questions = [
   {
@@ -71,96 +72,6 @@ expected_response = [
                 "valueDecimal": ""
               }
             ]
-          },
-          {
-            "linkId": "birthLength",
-            "text": "Birth length (cm)",
-            "answer": [
-              {
-                "valueDecimal": ""
-              }
-            ]
-          },
-          {
-            "linkId": "vitaminKgiven",
-            "text": "Vitamin K given",
-            "answer": [
-              {
-                "valueCoding": "",
-                "item": [
-                  {
-                    "item": [
-                      {
-                        "linkId": "vitaminKDose1",
-                        "text": "1st dose",
-                        "answer": [
-                          {
-                            "valueDateTime": ""
-                          }
-                        ]
-                      },
-                      {
-                        "linkId": "vitaminKDose2",
-                        "text": "2nd dose",
-                        "answer": [
-                          {
-                            "valueDateTime": ""
-                          }
-                        ]
-                      },
-                      {
-                        "linkId": "vitaminKDose3ForTesting",
-                        "text": "3rd dose (for testing)",
-                        "answer": [
-                          {
-                            "valueDate": ""
-                          }
-                        ]
-                      },
-                      {
-                        "linkId": "vitaminKDose4ForTesting",
-                        "text": "4th dose (for testing)",
-                        "answer": [
-                          {
-                            "valueTime": ""
-                          }
-                        ]
-                      }
-                    ],
-                    "linkId": "vitaminKgivenDoses"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "linkId": "hepBgiven",
-            "text": "Hep B given y / n",
-            "answer": [
-              {
-                "valueBoolean": "",
-                "item": [
-                  {
-                    "linkId": "hepBgivenDate",
-                    "text": "Date given",
-                    "answer": [
-                      {
-                        "valueDate": ""
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "linkId": "abnormalitiesAtBirth",
-            "text": "Abnormalities noted at birth",
-            "answer": [
-              {
-                "valueString": ""
-              }
-            ]
           }
         ],
         "linkId": "neonatalInformation"
@@ -171,12 +82,18 @@ expected_response = [
 ]
 
 test('render logic is correct', () => {
-
+  const questions = extractItems(mockData[1]).question;
+  expect(questions).toEqual(expected_questions);
 });
 
-test('updating field in questionnaire response is correct', () => {
-
+test('creating blank questionnaire response is correct', () => {
+  const resp = extractItems(mockData[1]).item;
+  expect(resp).toEqual(expected_response);
 });
+
+// test('updating field in questionnaire response is correct', () => {
+
+// });
 
 //The following tests (has question 1 through 8) are for the specific questionnaire used. If the questionnaire is changed, the tests will need to be commented and new ones will need to be written for the specific questions
 test('has question 1', () => {
