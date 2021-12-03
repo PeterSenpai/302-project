@@ -1,9 +1,3 @@
-// NOTE:
-// These tests cover the basic rendering of the questionnaire. We will be changing the
-// rendering logic soon as part of A3 and will add more comprehensive tests including
-// testing the interaction with the rendered questionnaire and more specific tests for
-// the different components as well.
-
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
@@ -22,13 +16,13 @@ test('has question 2', () => {
 
 test('has question 3', () => {
   render(<App />);
-  const Element = screen.getByText(/Birth weight (kg)/i);
+  const Element = screen.getByText(/Birth weight \(kg\)/i);
   expect(Element).toBeInTheDocument();
 });
 
 test('has question 4', () => {
   render(<App />);
-  const Element = screen.getByText(/Birth length (cm)/i);
+  const Element = screen.getByText(/Birth length \(cm\)/i);
   expect(Element).toBeInTheDocument();
 });
 
