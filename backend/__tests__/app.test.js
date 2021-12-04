@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 const EXAMPLE_RESPONSE_FILE = path.join(__dirname, './example-response.json');
 const exampleResponse = JSON.parse(readFileSync(EXAMPLE_RESPONSE_FILE));
 
-
+// This is a dummy test used for A1
 describe('GET /test', () => {
   it('should return welcome text', async () => {
     console.log(`========= Backend: I am running a test! =========`);
@@ -27,6 +27,7 @@ describe('GET /test', () => {
   });
 });
 
+// This test is validating the acceptance criteria of feature 1
 describe('GET /api/questionnaires', () => {
   it('should return JSON questionnaires', async() => {
     request(app)
@@ -43,6 +44,7 @@ describe('GET /api/questionnaires', () => {
   });
 });
 
+// These tests are validating the acceptance criteria of feature 4
 describe('POST /api/response', () => {
   let spy = {};
 
