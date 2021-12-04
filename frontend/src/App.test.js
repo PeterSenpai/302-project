@@ -376,7 +376,7 @@ test('updating datetime field in questionnaire response is correct', () => {
 test('updating coding field in questionnaire response is correct', () => {
   let resp = extractItems(mockData[1].item).item;
   updateValueByLinkIdAndResponseType(resp, "sex", "valueCoding", "F");
-  expect(resp[0].item[0].item[1].answer[0].valueCoding).toEqual("F");
+  expect(resp[0].item[0].item[1].answer[0].valueCoding.code).toEqual("F");
 });
 
 //The following tests (has question 1 through 8) are for the specific questionnaire used. If the questionnaire is changed, the tests will need to be commented and new ones will need to be written for the specific questions
