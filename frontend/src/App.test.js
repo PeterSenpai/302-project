@@ -346,22 +346,42 @@ const expected_response = [
 ];
 
 test('render logic is correct', () => {
-  const questions = extractItems(mockData[1]).question;
+  const questions = extractItems(mockData[1].item).questions;
   expect(questions).toEqual(expected_questions);
 });
 
 test('creating blank questionnaire response is correct', () => {
-  const resp = extractItems(mockData[1]).item;
+  const resp = extractItems(mockData[1].item).item;
   expect(resp).toEqual(expected_response);
 });
 
-// test('updating field in questionnaire response is correct', () => {
+test('updating string field in questionnaire response is correct', () => {
+  let resp = extractItems(mockData[1].item).item;
+  updateValueByLinkIdAndResponseType(resp, "abnormalitiesAtBirth", "valueString", "Test string");
+  expect(resp[0].item[1].item[4].answer[0].valueString).toEqual("Test string");
+});
 
-// });
+test('updating decimal field in questionnaire response is correct', () => {
+  let resp = extractItems(mockData[1].item).item;
+  updateValueByLinkIdAndResponseType(resp, "birthWeight", "valueDecimal", 5);
+  expect(resp[0].item[1].item[0].answer[0].valueDecimal).toEqual(5);
+});
+
+test('updating datetime field in questionnaire response is correct', () => {
+  let resp = extractItems(mockData[1].item).item;
+  updateValueByLinkIdAndResponseType(resp, "vitaminKDose1", "valueDateTime", "2021-12-18T00:08:28.142Z");
+  expect(resp[0].item[1].item[2].answer[0].item[0].item[0].answer[0].valueDateTime).toEqual("2021-12-18T00:08:28.142Z");
+});
+
+test('updating coding field in questionnaire response is correct', () => {
+  let resp = extractItems(mockData[1].item).item;
+  updateValueByLinkIdAndResponseType(resp, "sex", "valueCoding", "F");
+  expect(resp[0].item[0].item[1].answer[0].valueCoding).toEqual("F");
+});
 
 //The following tests (has question 1 through 8) are for the specific questionnaire used. If the questionnaire is changed, the tests will need to be commented and new ones will need to be written for the specific questions
 test('has question 1', () => {
-  console.log(`========= Frontend: I am running a test! =========`);
+  console.log("========= Frontend: I am running a test! =========");
   render(<App />);
   const Element = screen.getByText(/Name of child/i);
   expect(Element).toBeInTheDocument();
