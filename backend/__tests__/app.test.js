@@ -4,6 +4,7 @@ import { readFileSync } from 'fs';
 // having these 4 lines for b/c of the "type": "module" in package.json
 import path from 'path';
 import { fileURLToPath } from 'url';
+import {jest} from '@jest/globals'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -43,8 +44,31 @@ describe('GET /api/questionnaires', () => {
 });
 
 describe('POST /api/response', () => {
+  let spy = {};
+
+  beforeAll(() => {
+      spy.console = jest.spyOn(console, 'error');
+      spy.log = jest.spyOn(console, 'log');
+  });
+
+  afterAll(() => {
+      spy.console.mockRestore();
+      spy.log.mockRestore();
+  });
+
   it('should receive questionnaire response', async() => {
-    const res = await request(app).post('/api/response').send(exampleResponse);
+    const res = await request(app).post('/api/response').send(exampleResponse[0]);
     expect(res.statusCode).toBe(200);
+    expect(res.headers['content-type']).toContain('application/json');
+    expect(console.log).toBeCalledWith(exampleResponse[0]);
+  });
+  
+  it('should receive invalid JSON error', async() => {
+    const res = await request(app).post('/api/response').send(exampleResponse[1]);
+    expect(res.statusCode).toBe(400);
+    expect(console.error).toHaveBeenCalledTimes(3);
+    expect(res.headers['content-type']).toContain('application/json');
+    expect(res.body.message).toContain("Failed to parse request body as JSON resource.");
+    expect(res.body.message).toContain("missing required element: 'resourceType'");
   });
 });
