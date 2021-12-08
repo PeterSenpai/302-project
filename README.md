@@ -17,6 +17,7 @@ The following documents are located in the [`/documents-and-notes/`](documents-a
 -  [Progress document](documents-and-notes/progress.md) (A2)
 -  [A2 retrospective](documents-and-notes/a2-retrospective.md) (A3)
 -  [Feature Overview](documents-and-notes/feature-overview.md) (A3)
+-  [Presentation](documents-and-notes/Presentation.pdf)
 
 <br/>
 
